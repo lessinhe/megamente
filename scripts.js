@@ -15,3 +15,9 @@ function Chutar() {
       numeroSecreto;
   }
 }
+function reset() {
+  var elementoResultado = document.getElementById("resultado");
+  numeroSecreto = parseInt(Math.random() * 11);
+  elementoResultado.innerHTML = "";
+  document.getElementById("valor").value = "";
+}
